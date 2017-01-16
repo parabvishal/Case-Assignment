@@ -1,0 +1,22 @@
+TO replace Apache Web Server, Apache Tomcat application server with Active MQ and Oracle and MongoDB backend. with AWS services
+
+1) Configure AWS autoscaling for Apache web servers and install apache tomcat application on one of the server.
+
+2) USE AWS SES to replace Active MQ for managing message queue.
+
+3) Configure RDS in Multi AZ.
+
+
+Point of Actions
+
+1) configure RDS instance with Multi AZ.
+
+2) Configure EC2 instance and install Apache Tomcat application and establish conection to RDS instance.
+
+3) Create Image of EC2 instance created in above step
+
+4) Create SQS
+
+5) Create ELB 
+
+6) Create and autoscaling group with EC2 instance , AMI and ELB created above.
